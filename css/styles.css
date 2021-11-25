@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --negro: black;
+    --blanco:white;
+    --azul:#0B3A4E;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+
+h2{
+    
+    font-family: 'Libre Baskerville', serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.9em;
+}
+
+/* Estilos del header */
+#header{
+    position: relative;
+    width: 100%;
+}
+/* Estilos del menú de navegación */
+/* -------------------------------------- */
+.btn-menu>.fa-bars {
+    margin-top: 0.2em;
+    font-weight: bold;
+    font-size: 4em;
+    display: none;
+   
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 0.8em;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;  
+}
+
+#logo{
+    margin-left: 2em;
+    width: 24%;
+}
+
+.menu__contenedorLista{
+    margin-right: 4em;
+    margin-top: 1em;
+}
+
+.menu__contenedorListaElementos{
+    display: flex;
+    list-style: none;
+}
+
+.menu__contenedorListaElementos a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin: 0px 10px;
+    
+    padding: 0.5em;
+    font-weight: bolder;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.menu__contenedorListaElementos .activo{
+    border-bottom: solid 5px var(--azul);
+    border-top: solid 5px var(--azul);
+    color: var(--azul);
+}
+.menu__contenedorListaElementos a:hover{
+    
+    border-bottom: solid 5px var(--azul);
+    border-top: solid 5px var(--azul);
+    color: var(--azul);
+    
+
+}
+.imgHeader{
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    background: url(../img/banner1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;   
+}
+
+.degradado{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background: linear-gradient(to top, #0B3A4E, rgba(0, 0, 0, 0))
+}
+
+#verAbajo{
+    font-size: 70px;
+    color: var(--blanco);
+    padding-top: 0.2em;
+    width: 1.7em;
+    height: 1.7em;
+    border: 7px solid var(--blanco);
+    border-radius: 50%;
+    background: var(--azul);
+    position: absolute;
+    margin-top: 10em;
+    margin-left: 12.5em;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#verAbajo:hover{
+    font-size: 70px;
+    width: 2em;
+    height: 2em;
+    margin-left: 12.3em;
+    background: var(--blanco);
+    color: var(--azul)  ;
+}
+
+/* ------------------------------------------ */
+/* Estilos Seccion Personajes */
+/* ------------------------------------------ */
+
+.seccionOscura{
+    background: var(--azul);
+    padding-bottom: 10em;
+}
+.seccionClara{
+    background:var(--blanco);
+    padding-bottom: 10em;
+}
+.titulo{
+    padding-top: 3em;
+    font-size: 3em;
+    text-align: center;
+    
+
+}
+.titulo__colorBlanco{
+    color: var(--blanco);
+}
+.titulo__colorOscuro{
+    color: var(--azul);
+}
+.subtitulo{
+    color: var(--blanco);
+    font-size: 3em;
+    margin-bottom: 0.8em;
+}
+.personaje{
+    display: flex;
+    margin-top: 9.7em;
+    justify-content: center;
+}
+
+.personaje__slider {
+    
+    width: 54.551em;
+    height: auto;
+    
+}
+.izquierda{
+    margin-right: 8em;
+}
+
+.izquierda h2{
+    text-align: right;
+}
+.derecha{
+    flex-direction: row-reverse;
+    
+}
+
+.personaje__slider img{
+    width: 54.551em;
+    height: 31.215em;
+    border-radius:2em ;
+   
+}
+
+.personaje__texto{
+    width: 30em;
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 7em;
+    
+}
+
+.boton__verMas{
+    width: 6em;
+    height: 2em;
+    font-family: 'Libre Baskerville', serif;;
+    font-size: 1.7em;
+    background:#1471DE;
+    color: var(--blanco);
+    border: solid 0.100em var(--blanco);
+    border-radius: 0.563em;
+    margin-top: 1.5em;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.boton__verMas:hover{
+    transition: all .4s ease-in-out;
+   transform:scale(1.1);
+    background:var(--blanco);
+    color: #1471DE;
+    
+
+}
+.boton__verMas--historia{
+    margin-top: 0.5em;
+}
+/* ------------------------------------------ */
+/* Estilos sección naves */
+/* ------------------------------------------ */
+.cards__naves{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5em;
+    margin-top: 5em;
+    width:28.125em;
+    border-radius: 2em;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 27.346em;
+    transition: all .4s ease-in-out;
+}
+.card img:hover{
+    filter: saturate(200%);
+    transition: all .4s ease-in-out;
+    transform:scale(1.1);
+}
+.card__texto{
+    background:var(--negro);
+    color: var(--blanco);
+    width: 28.125em;
+    height: 18.279em;
+    
+    
+    transition: all .4s ease-in-out;
+}
+.card__texto:hover{
+    transition: all .4s ease-in-out;
+    transform:scale(1.1);
+}
+.card__texto h2{
+    margin-top: 0.5em;
+    font-size: 2em;
+    text-align: center;
+}
+.card__texto p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
+    margin-top: 0.7em;
+    text-align: center;
+}
+/* ------------------------------------------ */
+/* Estilos sección historia */
+/* ------------------------------------------ */
+.historia__argumento{
+    display: flex;
+    margin-bottom: 10em;
+    justify-content: center;
+    margin-top: 5em;
+}
+.historia__Texto{
+    border:solid 0.4em var(--blanco);
+    height: 39.3em;
+    width: 47em;
+    text-align: center;
+}
+.historia__Texto p{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.9em;
+}
+.historia__Texto h2{
+    text-align: center;
+    
+    
+}
+.historia__descripcion{
+    display: flex;
+    flex-direction: column;
+    
+}
+.historia__abajoImagen{
+   
+    width: 47.714em;
+    height: auto;
+    margin-top: 1em;
+    position: relative;
+    
+}
+.historia__abajoImagen img{
+    width: 47.714em;
+    height: 24.256em;
+    
+}
+.historia__arribaImagen{
+    margin-left: 1em;
+    width: 46.955em;
+    height: auto;
+    position: relative;
+}
+.historia__derechaImagen{
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 46.955em;
+    height: auto;
+    position: relative;
+    
+}
+#imagenVerde{
+    position: relative;
+}
+
+#imagenRoja{
+    position: relative;
+}
+#imagenAzul{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.rojo{
+    background:rgba(160, 7, 7, 0.63);
+}
+.verde{
+    background:rgba(12, 160, 7, 0.63);
+}
+.azul{
+    background:rgba(7, 55, 160, 0.63);
+}
+.historia__imagenes{
+    display: flex;
+    flex-direction: column;
+}
+.historia__imagenes .mosaico1{
+    width: 46.955em;
+    height: 27.536em;
+    
+}
+.historia__imagenes .mosaico2{
+    width: 46.955em;
+    height: 36.8em;
+}
+.trasfondo{
+    margin-right: 1em;
+    margin-top: 1em;
+}
+.historia__trasfondo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+/* ------------------------------------------ */
+/* Estilos sección banda sonora */
+/* ------------------------------------------ */
+.bandaSonora__texto{
+    color: var(--azul);
+    text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6em;
+}
+.album h2{
+    color: var(--azul);
+    font-size: 2.5em;
+    text-align: center;
+}
+.album{
+    height: 40em;
+    width: 40.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4em;
+    
+}
+.album img{
+    position: relative;
+    width: 20em;
+    height: 20em;
+    
+    transition: all .4s ease-in-out; 
+}
+.imagenAlbum:hover .info{
+    opacity: 1;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.imagenAlbum{
+    position: relative;
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+.parAlbum{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    
+    color: var(--blanco);
+    top: 0;
+    position: absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.9);
+    opacity:0;
+    transition: opacity 0.3s;
+}
+.info p{
+    padding-top: 4em;
+    padding-left: 1em;
+    
+}
+
+/* ------------------------------------------ */
+/* Estilos footer */
+/* ------------------------------------------ */
+.footer{
+    background:var(--negro);
+    height: 25em;
+    color: #006793;
+    text-align: center;
+    padding-top: 13em;
+    width: 100%;
+}
+.footer p{
+    margin-bottom: 1em;
+}
+
+.footer a{
+    font-size: 4.5em;
+    margin: 0.5em;
+    color: #006793;
+}
+
+@media only screen and (max-width:375px) {
+    #logo{
+        width: 60%;
+        margin-top: 1em;
+    }
+    
+    .btn-menu>.fa-bars{
+        display: block;
+        top: 1.25em;
+        margin-right: 0.5em;
+        cursor: pointer;
+    }
+
+    .menu .menu__contenedorLista{
+        position: absolute;
+        top: 3.75em;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: var(--azul);
+    }
+    .menu .menu__contenedorLista .menu__contenedorListaElementos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid black;
+       
+    }
+    .menu .menu__contenedorLista .menu__contenedorListaElementos li{
+        width: 90%;
+        margin: 10px 0;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .menu .menu__contenedorLista .menu__contenedorListaElementos li a{
+        border-bottom: none;
+        border-top: none;
+        font-size: 40px;
+        cursor: pointer;
+        
+    }
+    .menu .menu__contenedorLista .menu__contenedorListaElementos li a.activo{
+        color: var(--blanco);
+    }
+    p{
+    font-weight: 600;
+    font-size: 1.5em;
+    }
+    .imgHeader{
+        background: url(../img/banner2.jpg);
+        background-size: cover;
+    }
+
+    #verAbajo{
+        
+        margin-top: 5.5em;
+        margin-left: 1.7em;
+        
+    }
+    #verAbajo:hover{
+        font-size: 70px;
+        width: 1.7em;
+        height: 1.7em;
+        margin-left: 1.5em;
+        background: var(--azul);
+        color: var(--blanco) ;
+    }
+    .titulo{
+        padding-top: 3em;
+        font-size: 2em;
+    }
+    .subtitulo{
+        color: var(--blanco);
+        font-size: 2em;
+        margin-bottom: 0.8em;
+        text-align:center;
+    }
+    .personaje{
+        flex-direction: column;
+        margin-top: 6em;
+        align-items: center;
+       
+    }
+    .personaje__slider {
+        
+        width: 23em;
+        height: auto;
+        
+    }
+    .personaje__slider img{
+        width: 100%;
+        height: 16em;
+        border-radius:1em ;
+       
+    }
+    .izquierda{
+        margin-right: 0em;
+    }
+    .izquierda h2{
+        text-align:center;
+    }
+    .personaje__texto{
+        width: 20em;
+        height: auto;
+        text-align: center;
+        color: var(--blanco);
+        padding-top: 2em;
+        
+    }
+
+    .cards__naves{
+        flex-direction: column;
+       
+    }
+    .card{
+       
+        margin-left:0.22em;
+        margin-top: 3em;
+        width:23em;
+        border-radius: 2em;
+        overflow: hidden;
+    }
+    
+    .card__texto{
+        align-items: center;
+    }
+    .card__texto h2{
+        margin-right: 2.5em;
+        font-size: 2em;
+        text-align: center;
+    }
+    .card__texto p{
+        font-size: 1.3em;
+        margin-right: 3.5em;
+    }
+    .historia__argumento{
+       flex-direction: column   ; 
+       
+    }
+    .historia__Texto{
+        border:none;
+        
+        width: 23em;
+        text-align: center;
+        
+    }
+    .historia__Texto p{
+        margin: 1em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .historia__abajoImagen{
+        width: 23.3em;
+        margin-top: 11em;
+    }
+    .historia__abajoImagen img{
+        width: 23.3em;
+        height: 15em;
+        
+    }
+    .historia__arribaImagen{
+        margin-left: 0em;
+        width: 23.3em;
+        margin-top: 2em;
+        position: relative;
+    }
+    .historia__imagenes .mosaico1{
+        width: 23.3em;
+        height: 15em;
+    }
+    .historia__derechaImagen{
+        margin-left: 0em;
+        margin-top: 2em;
+        width: 23.3em;
+        margin-top: 2em;
+    }
+    .historia__imagenes .mosaico2{
+        width: 23.3em;
+        height: 15em;
+    }
+    .historia__trasfondo{
+        margin-top: 2em;
+        flex-direction: column;
+        
+    }
+    .bandaSonora__texto{
+        width: 80%;
+        margin-top: 4em;
+        
+    }
+    .parAlbum{
+        flex-direction: column;
+    }
+    .album{
+        width: 23em;
+        height: 25em;
+        margin: 0px;
+        padding: 0px;
+       
+    }
+    .album h2{
+        
+        font-size: 1em;
+        text-align: center;
+    }
+    .album img{
+        position: relative;
+        width: 18em;
+        height: 20em;
+        
+        transition: all .4s ease-in-out; 
+    }
+    .footer p{
+        font-size: 1em;
+        
+    }
+    .footer a{
+        font-size: 2.5em;
+       
+    }
+    .footer{
+        height: 10em;
+        padding-top: 3em;
+    }
+  
+    .info{
+        display: none;
+
+    }
+    .imagenAlbum:hover .info{
+        opacity: 0;
+      
+    }
+}
