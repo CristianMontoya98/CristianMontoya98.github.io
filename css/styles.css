@@ -58,12 +58,12 @@ p{
 
 #logo{
     margin-left: 2em;
-    width: 24%;
+    width: 28%;
 }
 
 .menu__contenedorLista{
-    margin-right: 4em;
-    margin-top: 1em;
+    margin-right: 2%;
+    margin-top: 1%;
 }
 
 .menu__contenedorListaElementos{
@@ -75,13 +75,11 @@ p{
     text-decoration: none;
     font-size: 30px;
     color: black;
-    margin: 0px 10px;
-    
+    margin: 10px;
     padding: 0.5em;
     font-weight: bolder;
     transition: 0.3s;
     cursor: pointer;
-    
 }
 .menu__contenedorListaElementos .activo{
     border-bottom: solid 5px var(--azul);
@@ -124,17 +122,16 @@ p{
     border-radius: 50%;
     background: var(--azul);
     position: absolute;
-    margin-top: 10em;
-    margin-left: 12.5em;
+    margin-top: 35%;
+    margin-left:45%;
+    
     margin-bottom: auto;
     cursor: pointer;
     transition: 0.5s;
 }
 #verAbajo:hover{
     font-size: 70px;
-    width: 2em;
-    height: 2em;
-    margin-left: 12.3em;
+    transform:scale(1.2);
     background: var(--blanco);
     color: var(--azul)  ;
 }
@@ -171,13 +168,13 @@ p{
 }
 .personaje{
     display: flex;
-    margin-top: 9.7em;
+    margin-top: 15%;
     justify-content: center;
 }
 
 .personaje__slider {
     
-    width: 54.551em;
+    width: 50%;
     height: auto;
     
 }
@@ -194,18 +191,16 @@ p{
 }
 
 .personaje__slider img{
-    width: 54.551em;
+    width: 100%;
     height: 31.215em;
-    border-radius:2em ;
-   
+    border-radius:2em;
 }
 
 .personaje__texto{
-    width: 30em;
+    width: 30%;
     text-align: center;
     color: var(--blanco);
     padding-top: 7em;
-    
 }
 
 .boton__verMas{
@@ -261,7 +256,7 @@ p{
 .card__texto{
     background:var(--negro);
     color: var(--blanco);
-    width: 28.125em;
+    width:100%;
     height: 18.279em;
     
     
@@ -287,14 +282,16 @@ p{
 /* ------------------------------------------ */
 .historia__argumento{
     display: flex;
-    margin-bottom: 10em;
     justify-content: center;
-    margin-top: 5em;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 .historia__Texto{
     border:solid 0.4em var(--blanco);
-    height: 39.3em;
-    width: 47em;
+    height:auto;
+    width: 90%;
+    padding-bottom: 3%;
     text-align: center;
 }
 .historia__Texto p{
@@ -309,33 +306,37 @@ p{
 }
 .historia__descripcion{
     display: flex;
+    width: 40%;
+     
+    align-items: center ;
     flex-direction: column;
     
 }
 .historia__abajoImagen{
    
-    width: 47.714em;
+    width: 90%;
     height: auto;
-    margin-top: 1em;
+    margin-top: 1%;
     position: relative;
     
 }
 .historia__abajoImagen img{
-    width: 47.714em;
-    height: 24.256em;
-    
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
 }
 .historia__arribaImagen{
     margin-left: 1em;
-    width: 46.955em;
-    height: auto;
+    width: 90%;
+    height: 41.55%;
     position: relative;
 }
+
 .historia__derechaImagen{
     margin-left: 1em;
     margin-top: 1em;
-    width: 46.955em;
-    height: auto;
+    width: 90%;
+    height:59%;
     position: relative;
     
 }
@@ -366,19 +367,21 @@ p{
 }
 .historia__imagenes{
     display: flex;
+    width: 40%;
+    
     flex-direction: column;
 }
 .historia__imagenes .mosaico1{
-    width: 46.955em;
-    height: 27.536em;
+    width: 100%;
+    height: 100%;
     
 }
 .historia__imagenes .mosaico2{
-    width: 46.955em;
-    height: 36.8em;
+    width: 100%;
+    height: 100%;
 }
 .trasfondo{
-    margin-right: 1em;
+    
     margin-top: 1em;
 }
 .historia__trasfondo{
@@ -589,37 +592,35 @@ p{
 
     .cards__naves{
         flex-direction: column;
-       
+       align-items: center;
     }
     .card{
-       
-        margin-left:0.22em;
         margin-top: 3em;
         width:23em;
         border-radius: 2em;
         overflow: hidden;
     }
     
-    .card__texto{
-        align-items: center;
-    }
+   
     .card__texto h2{
-        margin-right: 2.5em;
         font-size: 2em;
         text-align: center;
     }
     .card__texto p{
         font-size: 1.3em;
-        margin-right: 3.5em;
+        
+    }
+    .historia__descripcion{
+        width: 100%;
     }
     .historia__argumento{
-       flex-direction: column   ; 
+       flex-direction: column;
+       width: 100%;
        
     }
     .historia__Texto{
         border:none;
         
-        width: 23em;
         text-align: center;
         
     }
@@ -629,7 +630,7 @@ p{
         font-size: 1.5em;
     }
     .historia__abajoImagen{
-        width: 23.3em;
+        width: 100%;
         margin-top: 11em;
     }
     .historia__abajoImagen img{
@@ -677,10 +678,14 @@ p{
         padding: 0px;
        
     }
+
     .album h2{
         
         font-size: 1em;
         text-align: center;
+    }
+    .imagenAlbum{
+        width: 18em;
     }
     .album img{
         position: relative;
@@ -709,5 +714,15 @@ p{
     .imagenAlbum:hover .info{
         opacity: 0;
       
+    }
+}
+@media only screen and (max-width:1558px){
+    .menu__contenedorListaElementos a{
+        
+        font-size: 20px;
+        
+    }
+    .historia__Texto p{
+        font-size: 20px;
     }
 }
