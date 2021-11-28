@@ -103,7 +103,6 @@ p{
     background-position: center;
     background-size: cover;   
 }
-
 .degradado{
     position: absolute;
     width: 100%;
@@ -258,8 +257,6 @@ p{
     color: var(--blanco);
     width:100%;
     height: 18.279em;
-    
-    
     transition: all .4s ease-in-out;
 }
 .card__texto:hover{
@@ -301,13 +298,10 @@ p{
 }
 .historia__Texto h2{
     text-align: center;
-    
-    
 }
 .historia__descripcion{
     display: flex;
     width: 40%;
-     
     align-items: center ;
     flex-direction: column;
     
@@ -323,7 +317,7 @@ p{
 .historia__abajoImagen img{
     width: 100%;
     height: 100%;
-    margin-top: 1%;
+    
 }
 .historia__arribaImagen{
     margin-left: 1em;
@@ -338,7 +332,6 @@ p{
     width: 90%;
     height:59%;
     position: relative;
-    
 }
 #imagenVerde{
     position: relative;
@@ -368,7 +361,6 @@ p{
 .historia__imagenes{
     display: flex;
     width: 40%;
-    
     flex-direction: column;
 }
 .historia__imagenes .mosaico1{
@@ -461,20 +453,25 @@ p{
 /* ------------------------------------------ */
 .footer{
     background:var(--negro);
-    height: 25em;
+    height: 15em;
     color: #006793;
     text-align: center;
-    padding-top: 13em;
+    padding-top: 5em;
     width: 100%;
 }
 .footer p{
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .footer a{
     font-size: 4.5em;
     margin: 0.5em;
     color: #006793;
+    transition: all .4s ease-in-out;
+}
+.footer a:hover{
+    color: wheat;
+    font-size: 5em;
 }
 
 @media only screen and (max-width:450px) {
@@ -492,7 +489,7 @@ p{
 
     .menu .menu__contenedorLista{
         position: absolute;
-        top: 3.75em;
+        top: 5.5em;
         left: -100%;
         width: 100%;
         height: calc(100vh - 60px);
@@ -517,33 +514,42 @@ p{
     .menu .menu__contenedorLista .menu__contenedorListaElementos li a{
         border-bottom: none;
         border-top: none;
-        font-size: 40px;
+        font-size: 35px;
         cursor: pointer;
         
     }
     .menu .menu__contenedorLista .menu__contenedorListaElementos li a.activo{
         color: var(--blanco);
     }
+    .menu__contenedorListaElementos a:hover{
+    
+        border-bottom: none;
+        border-top: none;
+        color: black;
+        
+    
+    }
+
     p{
-    font-weight: 600;
     font-size: 1.5em;
     }
     .imgHeader{
         background: url(../img/banner2.jpg);
         background-size: cover;
+        background-attachment: fixed;
     }
-
+    
     #verAbajo{
         
-        margin-top: 5.5em;
-        margin-left: 1.7em;
+        margin-top: 100%;
+        margin-left: 35%;
         
     }
     #verAbajo:hover{
         font-size: 70px;
         width: 1.7em;
         height: 1.7em;
-        margin-left: 1.5em;
+        
         background: var(--azul);
         color: var(--blanco) ;
     }
@@ -601,7 +607,6 @@ p{
         overflow: hidden;
     }
     
-   
     .card__texto h2{
         font-size: 2em;
         text-align: center;
@@ -697,7 +702,6 @@ p{
         width: 18em;
         height: 20em;
         
-        transition: all .4s ease-in-out; 
     }
     .footer p{
         font-size: 1em;
@@ -707,20 +711,16 @@ p{
         font-size: 2.5em;
        
     }
+    .footer a:hover{
+        color: #006793;
+        font-size: 2.5em;
+    }
     .footer{
         height: 10em;
         padding-top: 3em;
-    }
-  
-    .info{
-        display: none;
-
-    }
-    .imagenAlbum:hover .info{
-        opacity: 0;
-      
-    }
+    }  
 }
+
 @media only screen and (max-width:1558px){
     .menu__contenedorListaElementos a{
         

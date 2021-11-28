@@ -94,7 +94,7 @@ window.onscroll = () => {
         containerMenu.style.top = "0";
         containerMenu.style.transition = "0.5s";
     } else {
-        containerMenu.style.top = "-128px";
+        containerMenu.style.top = "-147px";
         containerMenu.style.transition = "0.5s";
     }
 
